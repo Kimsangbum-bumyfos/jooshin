@@ -1,0 +1,583 @@
+/*-------------------------------------------------------------------
+    작성날짜 : 2019-04-23 박일형
+    수정날짜 : 
+    *(주의사항 : )
+-------------------------------------------------------------------*/
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Noto Sans KR', '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.2em;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+    letter-spacing: 0;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    background-color: #FFF;
+    color: #333;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+input::placeholder,
+textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #333;
+    opacity: 1;
+    /* Firefox */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #333;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #333;
+}
+
+input::-webkit-input-placeholder {
+    color: #333;
+}
+
+input::-moz-placeholder {
+    color: #333;
+}
+
+/* placeholder 포커스시 감추기 */
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* 화살표 증-감 삭제 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* 공용 클래스 */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: fixed !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #1d60a7;
+    clip: auto !important;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: auto;
+    left: 0;
+    right: 0;
+    line-height: normal;
+    padding: 15px;
+    text-decoration: none;
+    top: 0;
+    text-align: center;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.ellipsis-line-one {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.5em;
+    height: 1.5em;
+}
+
+.ellipsis-line-two {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.5em;
+    height: 3em;
+}
+
+.ellipsis-line-three {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.5em;
+    height: 4.5em;
+}
+
+.ellipsis-line-five {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.5em;
+    height: 7.5em;
+}
+
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    text-indent: 101%;
+    font-size: 0;
+    line-height: 0;
+    white-space: nowrap;
+}
+
+.text-hidden {
+    display: block;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+/* width */
+.wd-10 {
+    width: 10% !important;
+}
+
+.wd-20 {
+    width: 20% !important;
+}
+
+.wd-30 {
+    width: 30% !important;
+}
+
+.wd-40 {
+    width: 40% !important;
+}
+
+.wd-50 {
+    width: 50% !important;
+}
+
+.wd-60 {
+    width: 60% !important;
+}
+
+.wd-70 {
+    width: 70% !important;
+}
+
+.wd-80 {
+    width: 80% !important;
+}
+
+.wd-90 {
+    width: 90% !important;
+}
+
+.wd-100 {
+    width: 100% !important;
+}
+
+/*  Align  */
+.align-t {
+    vertical-align: top !important;
+}
+
+.align-m {
+    vertical-align: middle !important;
+}
+
+.align-b {
+    vertical-align: bottom !important;
+}
+
+.align-l {
+    text-align: left !important;
+}
+
+.align-c {
+    text-align: center !important;
+}
+
+.align-r {
+    text-align: right !important;
+}
+
+.centered-t {
+    position: absolute !important;
+    left: 50%;
+    top: 0;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.centered-r {
+    position: absolute !important;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centered-b {
+    position: absolute !important;
+    left: 50%;
+    bottom: 0;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.centered-l {
+    position: absolute !important;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered-c {
+    position: absolute !important;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fl-l {
+    float: left;
+}
+
+.fl-r {
+    float: right;
+}
+
+.dp-ib {
+    display: inline-block;
+}
+
+
+/* 색상 */
+.color-fff {
+    color: #FFF;
+}
+
+.color-333 {
+    color: #333;
+}
+
+.color-666 {
+    color: #666;
+}
+
+
+/* 스킵 내비게이션 */
+#skip {
+    position: relative;
+}
+
+#skip a {
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    width: 140px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    background: #333;
+    line-height: 30px;
+}
+
+#skip a:active,
+#skip a:focus {
+    top: 0;
+}
+
+
+/* 모바일 & 태블릿 공통 */
+@media(max-width: 1023px) {
+    
+    .m-fl-clear {
+        float: none !important;
+    }
+
+}

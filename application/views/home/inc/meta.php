@@ -1,0 +1,1 @@
+<meta name="robots" content="<?php echo (ENVIRONMENT === 'production') ? 'index,follow' : 'noindex,nofollow'; ?>">

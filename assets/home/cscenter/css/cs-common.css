@@ -1,0 +1,945 @@
+@charset "UTF-8";
+
+body.cscenter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'scd','Noto Sans KR', '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+    letter-spacing:-0.05em;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    background-color: #fff;
+    color: #333;
+}
+
+.cs-wrap {
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+}
+
+/* 폼 */
+.cscenter .table {
+    position: relative;
+    width: 100%;
+}
+
+.cscenter .cs-form input,
+.cscenter .cs-form select {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border:1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.cscenter .cs-form textarea {
+    width: 100%;
+    height: 110px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border:1px solid #ddd;
+    margin: 5px 0;
+    padding: 14px 20px;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.4;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.cscenter .cs-form select {
+    padding-right: 30px;
+    background: #fff url(../img/tab-arrow-left.png) 100% 50% no-repeat;
+}
+
+.cscenter .cs-form .full {
+    display: block;
+    width: 100%;
+}
+
+.cscenter .cs-form .checkbox {
+/*    position: relative;
+    line-height: 1.4;
+    font-size: 14px;*/
+}
+
+.cscenter .cs-form .checkbox input[type="checkbox"] {
+/*    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0 !important;
+    border-radius: 0 !important;*/
+    /*-webkit-border-radius: 8px;*/
+    /*-moz-border-radius: 8px;*/
+    /*border-radius: 8px;*/
+    /*border: 2px solid #171717;*/
+    /*background: #fff url(../img/ico-checkbox.png) 0 -2px / 22px auto no-repeat;*/
+
+/*    margin-bottom: 3px;
+    background:url(../img/checkbox.png) 50% 0%/ 22px auto no-repeat;
+    vertical-align: middle;*/
+}
+
+.cscenter .cs-form .radiobtn input[type="radio"] {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+    border: 2px solid #171717;
+    background: #fff url(../img/ico-radiobtn.png) 0 0 / 22px auto no-repeat;
+    vertical-align: bottom;
+}
+
+/*.cscenter .cs-form .checkbox input[type="checkbox"]:checked,*/
+.cscenter .cs-form .radiobtn input[type="radio"]:checked {
+    background-color: #ff5d5d;
+    background-position: -2px -23px;
+}
+
+/*.cscenter .cs-form .checkbox input[type="checkbox"]:checked {
+    background:url(../img/checkbox.png) 50% 100%/ 22px auto no-repeat;
+}*/
+
+.checkbox-desc {
+    position: relative;
+    line-height: 1.4;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox {
+    width:0 !important;
+    height: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox+label span {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    margin: 0 10px 2px 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/checkbox.png) 50% 0%/ 22px auto no-repeat;
+    vertical-align: middle;
+}
+
+
+.checkbox:checked+label span {
+    background:url(../img/checkbox.png) 50% 100%/ 22px auto no-repeat;
+}
+
+
+/* 버튼 */
+.cscenter .btn-group {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cscenter .btn {
+    height: 44px;
+    margin: 10px 5px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    min-width: 64px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cscenter .btn.type-a {
+    display: inline-block;
+    color: #fff;
+    background-color: #00B6AB;
+}
+
+.cscenter .btn.type-a.active {
+    display: none;
+}
+
+.cscenter .btn.type-a:hover,
+.cscenter .btn.type-a:active {
+    color: #fff;
+    background-color: #0BBDB2;
+}
+
+.cscenter .highlight {
+    color: #ff5555;
+}
+
+/* 헤더 */
+.cscenter .h-title h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.cscenter .cs-tab {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.cscenter .cs-tab ul li {
+    float: left;
+    width: 33.33%;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* IE + fullpage.js 라인 제거 */
+.cscenter .cs-tab ul li.active:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.cscenter .cs-tab ul li span {
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 0;
+    background-color: #f6f6f6;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cscenter .cs-tab ul li:first-child span {
+    border-left: 1px solid #ddd;
+}
+
+.cscenter .cs-tab ul li.active span {
+    height: 52px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-bottom: 0;
+    font-weight: 400;
+    color: #00B6AB;
+}
+
+/* 바디 */
+.cscenter .cs-body .tab-panel {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.cs-body .tab-panel::-webkit-scrollbar {
+    display: none;
+}
+
+.cscenter .cs-body .tab-panel#talkTab::-webkit-scrollbar,
+.cscenter .cs-body .tab-panel#formTab::-webkit-scrollbar {
+    /*display: none; */
+}
+
+.cscenter .cs-body .tab-panel.active {
+    display: block;
+}
+
+/* 첫번째 탭 */
+/* 검색바 */
+.cscenter .search-group {
+    position: relative;
+    margin: 10px 0;
+}
+
+.cscenter .search-group .cs-form {
+    position: relative;
+    padding-right: 90px;
+}
+
+.cscenter .search-group .cs-form  input{
+    position: relative;
+    padding-left: 45px;
+    background: url(../img/ico-search.png) 16px 50% / 20px auto no-repeat;
+}
+
+.cscenter .search-group .btn {
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+/* 카테고리바 */
+.cscenter .sort-group {
+    display: block;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    padding-top: 6px;
+    border-bottom: 1px solid #171717;
+}
+
+.cscenter .sort-crop {
+    position: relative;
+    height: 100%;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.cscenter .sort-list {
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.cscenter .sort-list.end {
+    left: auto;
+    right: 0;
+}
+
+.cscenter .sort-list .cs-category-item {
+    padding: 0 20px;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+.cscenter .sort-list .cs-category-item:last-child {
+    border-right: none;
+}
+
+.cscenter .sort-list .cs-category-item.active {
+    font-weight: 400;
+    color: #00B6AB;
+}
+
+.cscenter .sort-btn-group {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.cscenter .sort-btn-group a {
+    display: block;
+    float: left;
+    width: 17px;
+    height: 17px;
+    text-indent: 101%;
+    white-space: nowrap;
+    border: 1px solid #c1c1c1;
+}
+
+.cscenter .sort-btn-group .btn-prev {
+    background: url(../img/tab-arrow-left.png) 50% 50% / 15px auto no-repeat;
+}
+
+.cscenter .sort-btn-group .btn-next {
+    background: url(../img/tab-arrow-right.png) 50% 50% / 15px auto no-repeat;
+}
+
+.cscenter .sort-btn-group .btn-prev.disabled,
+.cscenter .sort-btn-group .btn-next.disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* QNA 아코디언 */
+.cscenter .qna-group {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*height: calc(100% - 130px);*/
+    /*height: calc(100% - 217px);*/
+    /*overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;*/
+}
+
+.qna-btn {
+    width: 100%;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.cscenter .qna-group::-webkit-scrollbar {
+    /*display: none;*/
+}
+
+.cscenter .qna-group .cs-category-item {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: -1px;
+}
+
+.cscenter .qna-group .cs-category-item .qna-title {
+    position: relative;
+    padding: 20px 40px 20px 46px;
+    font-size: 14px;
+    cursor: pointer !important;
+    word-break: break-all;
+}
+
+.cscenter .qna-group .cs-category-item .qna-title::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/ico-list-question.png) 50% 50% / 20px auto no-repeat;
+}
+
+.cscenter .qna-group .cs-category-item .qna-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url(../img/ico-accordion-arrow.png) 0 0 / 24px no-repeat;
+}
+
+.cscenter .qna-group .cs-category-item.active .qna-title::after {
+    background-position: 0 -24px;
+}
+
+.cscenter .qna-group .cs-category-item .qna-content {
+    display: none;
+    position: relative;
+    padding: 20px 10px 20px 46px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.cscenter .qna-group .cs-category-item .qna-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/ico-list-answer.png) 50% 50% / 20px auto no-repeat;
+}
+
+.cscenter span.highlight {
+    color: #ff5d5d;
+}
+
+.cscenter span.highlight-blue {
+    color: #4457c0;
+}
+
+.cscenter .empty-panel {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* padding-top: 80px; */
+    background-color: #fff;
+    text-align: center;
+}
+
+.cscenter .ico-cry {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    background: url(../img/emoji-sad.png) 50% 50% / 80px auto no-repeat;
+    text-align: center;
+}
+
+/* 두번째 탭 */
+/* 톡 리스트 */
+.cscenter .talk-list .cs-category-item {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 40px 140px 40px 30px;
+}
+
+.cscenter .talk-list .cs-category-item:last-child {
+    border-bottom: none;
+}
+
+.cscenter .talk-desc h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cscenter .talk-desc p {
+    font-size: 14px;
+    color: #666;
+}
+
+.cscenter .cs-category-item .btn-talk {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    padding-left: 44px;
+    color: #fff;
+}
+
+.cscenter .cs-category-item .btn-talk.naver{
+    background: #00c73c url(../img/ico-naver.png) 10px 50% / 28px auto no-repeat;
+}
+
+.cscenter .cs-category-item .btn-talk.kakao{
+    background: #2c1617 url(../img/ico-kakao.png) 10px 50% / 28px auto no-repeat;
+}
+
+.cscenter .cs-category-item .btn-talk a {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* 세번째 탭 */
+
+.cscenter .agreement {
+    position: relative;
+}
+
+.cscenter .btn-detail {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #ff5d5d;
+}
+
+.cscenter .btn-detail::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    margin-left: 4px;
+    background: url(../img/btn-detail.png) 0 0 / 8px no-repeat;
+}
+
+.cscenter .result-panel {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cscenter .result-panel .icon.success {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: 80px;
+    background: url(../img/emoji-happy.png) 50% 50% / 80px auto no-repeat;
+    text-align: center;
+}
+
+.cscenter .result-panel .icon.fail {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: 80px;
+    background: url(../img/emoji-sad.png) 50% 50% / 80px auto no-repeat;
+    text-align: center;
+}
+
+/* 푸터 */
+.cscenter .cs-footer .f-desc {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: calc(100% - 150px);
+    line-height: 1.4;
+}
+
+.cscenter .f-desc .phone {
+    font-size: 26px;
+    color: #fff;
+}
+
+.cscenter .f-desc .address {
+    font-size: 14px;
+    color: #FFF;
+    opacity: .5;
+}
+
+.cscenter .f-btn-group {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.cscenter .f-btn-group a {
+    float: left;
+    display: block;
+    position: relative;
+    width: 54px;
+    height: 60px;
+    margin: 0 6px;
+    padding-bottom: 70px;
+}
+
+.cscenter .f-btn-group a span {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.cscenter .f-btn-group .btn-map-cs {
+    background: url(../img/ico-mapx4.png) 49% 5px / 38px auto no-repeat;
+}
+
+/* 모달 */
+
+body.fixed {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.modal-full.dimmed {
+    background-color: rgba(0,0,0,.5);
+}
+
+.cscenter .cs-modal-content {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.cscenter .cs-modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* 지도모달 */
+.cscenter .cs-modal-content #map {
+    width: 100%;
+    height: 100%;
+    /*background-color: yellowgreen;*/
+
+}
+
+.cscenter .cs-detail-title {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #646464;
+    text-align: left;
+    font-size: 18px;
+}
+
+.cscenter .cs-detail-title.privacy {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.cscenter .detail-subinfo {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: red;
+    border-bottom: 2px solid #646464;
+}
+
+.cscenter .table.cs-detail {
+    width: 100%;
+    border-top: 2px solid #646464;
+    margin-bottom: 30px;
+}
+
+.cscenter .table.cs-detail tr th,
+.cscenter .table.cs-detail tr td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: #646464; 
+}
+
+.cscenter .table.cs-detail tr th {
+    font-weight: 500;
+}
+
+.cscenter .table.cs-detail .cs-category-item {
+    /*list-style: disc;*/
+    list-style-position: inside;
+    text-indent: 10px;
+}
+
+.cscenter .desc-box.cs-detail {
+    border-radius: 5px;
+    border: 2px solid #666;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.cscenter .desc-box.cs-detail .desc-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* placeholder 벤더 프리픽스 */
+input:-ms-input-placeholder {
+    color: #999;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder { 
+    color: #999;
+    font-weight: 400;
+    font-family: inherit;
+} 
+
+input::-moz-placeholder { 
+    color: #999;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+/* placeholder 포커스시 감추기 */
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { 
+    /* WebKit browsers */ 
+    color:transparent; 
+} 
+
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */ 
+    color:transparent; 
+ } 
+
+ input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { 
+    /* Mozilla Firefox 19+ */ 
+    color:transparent; 
+} 
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+    /* Internet Explorer 10+ */ 
+    color:transparent; 
+}
+
+/* 고객센터 개인정보 수집 이용 동의 */
+/* 이용약관 PC-T-M 통합 */
+.terms {
+/*    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    padding: 4.375rem 20px 2rem 20px;
+    margin: 0 auto;*/
+}
+
+.terms-top-title {
+    margin-bottom: 1.875rem;
+    font-family: 'NanumSquareRound';
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #333;
+}
+
+.terms-box {
+    margin-bottom: 1.875rem;
+    /*font-size: 15px;*/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+.terms-box ul {
+    margin-bottom: 20px;
+}
+
+.terms-box .terms-sub {
+    margin-bottom: 10px;
+    /*font-size: 20px;*/
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.terms-box .terms-sub2 {
+    margin: 10px 0;
+    /*font-size: 16px;*/
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.terms-box .terms-indent {
+    text-indent: 10px;
+}
+
+.terms-box .terms-indent-B {
+    text-indent: 20px;
+}
+
+.terms-box ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.terms-box ul li::before {
+    content: '\00B7';
+    position: absolute;
+    left: 0;
+    /*font-size: 20px;*/
+    font-size: 18px;
+    line-height: 1.1;
+    color: #666;
+}
+
+.terms-box.center {
+    text-align: center;
+}
+
+.terms-bold {
+    font-weight: 700;
+}
+
+/* 이용약관 테이블 */
+.terms-table-list {
+    position: relative;
+    width: 100%;
+    clear: both;
+    margin: 16px 0 20px 0;
+    border-top: 1px solid #333;
+    font-family: 'NanumGothic';
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    color: #333;
+}
+
+.terms-table-list tbody th {
+    padding: 5px 0;
+    background-color: #F8F8F8;
+    border: 1px solid #C7C7C7;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.terms-table-list tbody td {
+    padding: 5px 0;
+    background-color: #FFF;
+    border: 1px solid #C7C7C7;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.cs-faq-no-result {
+    padding: 5px;
+    text-align: center;
+}

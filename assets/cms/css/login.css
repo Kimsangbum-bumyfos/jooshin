@@ -1,0 +1,148 @@
+/* 로그인 */
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff no-repeat 50% 50% / cover;
+    transition: all 2s ease-in-out
+}
+
+.login-header {
+    padding-top: 80px;
+}
+
+.login-header .logo {
+    height: 104px;
+    text-align: center;
+}
+
+.login-header .logo h1 {
+    height: 100%;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background: url(../img/login/login-logo.png) 50% 50% / 230px auto no-repeat;
+}
+
+.login-header .saying {
+    padding: 20px 0;
+    line-height: 34px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login-header .saying p {
+    font-size: 18px;
+}
+
+.content-panel {
+    padding: 40px 45px;
+    border: 1px solid #fff;
+	background-color:rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 13px 0px  rgba(0,0,0,.2);
+	margin: 10px auto;
+}
+
+.content-panel.login {
+	width: 350px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+    height: auto;
+    border-bottom: 1px solid #3a4954;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.input-group .ico-user {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/login/ico-user.png) 0 0 / 30px no-repeat;
+}
+
+.input-group .ico-pw {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/login/ico-pw.png) 0 0 / 30px no-repeat;
+}
+
+/* 비밀번호 찾기 */
+.content-panel.password {
+    width: 500px;
+    margin-top: 60px;
+    padding: 80px 60px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 13px 0 rgba(0,0,0,.2);
+
+}
+
+.content-panel.password .panel-title h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.content-panel.password .panel-title h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.content-panel.password .form-group {
+    width: 100%;
+    text-align: center;
+}
+
+.content-panel.password .form-group::after {
+    display: inline-block;
+    content: '우리 사이트는 MAKEHOME에서 운영하고 있습니다.';
+    font-size: 13px;
+    color: #999;
+}
+
+.input-group .ico-email {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/login/ico-email.png) 0 0 / 30px no-repeat;
+}
+
+.input-group.wrong {
+    border-color: #ff5555;
+}
+
+.input-group.wrong label+span {
+    background-position: 0 -30px;
+}
+
+.wrong-info {
+    display: block;
+    position: absolute;
+    top:60px;
+    left:0px;
+    text-align: left;
+    font-size: 14px;
+    color: #ff5555;
+}

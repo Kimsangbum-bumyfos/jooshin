@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 헤더 */
+.cscenter .h-title {
+    position: relative;
+    padding: 30px 30px 10px;
+    height: 100%;
+}
+
+.cscenter .h-title .btn-close {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 28px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ico-close.png) 0 0 / 24px auto no-repeat;
+    overflow: hidden;
+    text-indent: 101%;
+}
+
+.cscenter .cs-tab ul {
+    margin: 0 30px;
+    border-bottom: 2px solid #333;
+}
+
+/* 바디 */
+.cscenter .cs-body {
+    position: relative;
+    margin: 0 30px;
+    height: calc(100% - 240px);
+    background-color: #fff;
+}
+
+.cscenter .cs-body .tab-panel#qnaTab,
+.cscenter .cs-body .tab-panel#talkTab,
+.cscenter .cs-body .tab-panel#formTab {
+    /*overflow-y: hidden;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;*/
+}
+
+/* 푸터 */
+.cscenter .cs-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 20px 20px 30px;
+    /*background-color: #4457c0;*/
+    background-color: #333;
+}
+
+.cscenter .f-btn-group .btn-navi-cs {
+    display: none;
+    background: url(../img/ico-navi.png) 49% 5px / 38px auto no-repeat;
+}
+
+/* 지도모달 */
+.cscenter .cs-modal-content {
+    padding: 10px 30px;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.cs-faq-no-result {
+    padding: 10px 0;
+    margin-top: 30px;
+    font: 400 16px 'Noto Sans KR';
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}

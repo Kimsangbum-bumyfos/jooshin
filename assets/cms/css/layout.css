@@ -1,0 +1,1269 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.row {
+    width :100%; 
+}
+
+.col-15 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 15%;
+}
+
+.col-20 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 20%;
+}
+
+.col-25 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 25%;
+}
+
+.col-33 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 33.33%;
+}
+
+.col-40 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 39%;
+}
+
+.col-50 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 49%;
+}
+
+.col-55 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 54%;
+}
+
+.col-75{
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 75%;
+}
+
+.col-100 {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    width: 100%;
+}
+
+/*
+    관리자 경고 스타일
+    col-error : col-100
+    col-error.file-err : 이미지 업로드
+    col-error.calendar-err : 종료일
+*/
+
+.col-error {
+    display: inline-block;
+    padding: 7px 10px;
+    margin: 10px 5px 0px 5px;
+    font: 400 13px 'Noto Sans KR';
+    line-height: 1.4;
+    color: #ff0000;
+    background-color: #ffe5e5;
+    border-radius: 10px;
+}
+
+.col-error.file-err{
+    margin: 0 5px 0px 5px;
+}
+
+.col-error.calendar-err {
+    margin-left: 34px;
+}
+
+.with-btn {
+    position: relative;
+    padding: 0 100px 0 5px;
+}
+
+.with-btn .btn {
+    min-width: 90px;
+}
+
+.with-btn-m {
+    position: relative;
+    padding: 0 120px 0 5px;
+}
+
+.with-btn-m .btn {
+    min-width: 110px;
+}
+
+.with-btn-l {
+    position: relative;
+    padding: 0 140px 0 5px;
+}
+
+.with-btn-l .btn {
+    min-width: 130px;
+}
+
+/* 로그인 */
+.login-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff no-repeat 50% 50% / cover;
+    transition: all 2s ease-in-out
+}
+
+.login-header {
+    padding-top: 104px;
+}
+
+.login-header .logo {
+    height: 104px;
+    text-align: center;
+}
+
+.login-header .logo h1 {
+    height: 100%;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background: url(../img/login/login-logo.png) 50% 50%/ 230px auto no-repeat;
+}
+
+.login-header .saying {
+    padding: 20px 0;
+    line-height: 34px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login-header .saying p {
+    font-size: 18px;
+}
+
+.login-panel {
+	width: 350px;
+    padding: 40px 45px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 13px 0 rgba(0,0,0,.2);
+    margin: 10px auto;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+    border-bottom: 1px solid #3a4954;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.input-group .ico-user {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/login/ico-user.png) no-repeat;
+}
+
+.input-group .ico-pw {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/login/ico-pw.png) no-repeat;
+}
+
+/* 헤더 */
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 74px;
+    background: #fff;
+    border-bottom: 1px solid #c8c8c8;
+    z-index: 20;
+}
+
+.logo-area {
+    float: left;
+    width: 260px;
+    height: 100%;
+    padding: 10px 20px 10px 30px;
+    background-color: #fff;
+}
+
+.logo-area h1 {
+    height: 100%;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background: url(../img/logo/logo.png) 0 50% / 140px no-repeat;
+}
+
+.gnb {
+    float: left;
+    height: 100%;
+}
+
+.gnb-menu {
+    position: relative;
+    width: 80px;
+    height: 74px;
+    padding: 17px 20px;
+}
+
+.gnb-menu .ico-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/ico-menu.png) 50% 0 / 40px no-repeat;      
+}
+
+.gnb-items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;   
+    height: 100%;  
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.gnb-items li.gnb-item {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    float: left;       
+}
+
+.gnb-items li.gnb-item>a {
+    display: block;
+    padding: 17px 16px 16px;
+}
+
+.gnb-items li.gnb-item a.gnb-profile {
+    display: block;
+    padding: 16px 0px 15px 17px;
+}
+
+.gnb-items li.gnb-item a.gnb-profile .user-name {
+    margin-left: 6px;
+    color: #999;
+}
+
+.gnb-items li.gnb-item a.gnb-profile .user-name:hover {
+    color: #888;
+}
+
+.gnb-items li.gnb-item a.gnb-profile .gnb-profile-img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 21px;
+    width: 42px;
+}
+
+.gnb-items li.gnb-item a .gnb-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.gnb-item {
+    position: relative;
+}
+
+.gnb-item .badge {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    width: 10px;
+    height: 10px;
+}
+
+.gnb-item .wave-dot{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+ }
+
+ .gnb-item .wave{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    border:2px solid rgba(255,0,0,.7);
+    z-index: 2;   
+    animation: 1s w1 infinite ;
+ }
+ 
+ @keyframes w1{
+    to{  transform:scale(2.3,2.3); opacity: .0;}
+ }
+
+.gnb-items li.gnb-item .ico-alert {
+    background: url(../img/icons/ico-alert.png) 0 0 / 40px no-repeat;
+}
+
+.gnb-items li.gnb-item .ico-news {
+    background: url(../img/icons/ico-news.png) 0 0 no-repeat;
+}
+
+.gnb-items li.gnb-item .ico-logout {
+    background: url(../img/icons/ico-logout.png) 0 0 no-repeat;
+}
+
+.gnb-menu .ico-menu:hover,
+.gnb-items li.gnb-item .ico-alert:hover,
+.gnb-items li.gnb-item .ico-news:hover,
+.gnb-items li.gnb-item .ico-logout:hover
+ {
+    background-position: 0 -40px;
+}
+
+/* 드롭다운패널 */
+.dropdown-panel {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    padding: 0 20px;
+    overflow: hidden;
+    border: 1px solid #c8c8c8;
+    border-top: 4px solid #0276d6;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0);
+    transition: all 800ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-panel.active {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 4px 4px 30px rgba(0,0,0,.2);
+}
+
+.dropdown-header .dr-title {
+    position: relative;
+}
+
+.dropdown-header .dr-title h3{
+    line-height: 60px;
+    font-size: 20px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.dropdown-header .dr-title .dr-badge {
+    position: absolute;
+    top: 19px;
+    right: 0;
+    padding: 2px 9px;
+    background-color: #d30702;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+.dropdown-header .dr-title .dr-badge.empty {
+    background-color: #999;
+}
+
+.dropdown-body ul.dr-list-items {
+    margin: 10px 0;
+}
+
+.dropdown-body ul.dr-list-items li {
+    position: relative;
+    padding-right: 75px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #999;
+    list-style: disc;
+    list-style-position: inside;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dropdown-body ul.dr-list-items li:hover {
+    color: #888;
+}
+
+.dropdown-body ul.dr-list-items li:hover a {
+    color: #888;
+}
+
+.dropdown-body ul.dr-list-items li a {
+    color: #999;
+}
+
+.dropdown-body ul.dr-list-items li span.dr-list-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dropdown-body .dr-content-empty {
+    margin: 5px 0 ;
+    padding: 30px 0;
+    text-align: center;
+    color: #999;
+}
+
+.dropdown-body .dr-content-empty .ico-empty {
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/ico-empty.png) 50% / 50px no-repeat;
+}
+
+.dropdown-footer {
+    border-top: 1px solid #c8c8c8;
+    text-align: center;
+}
+
+.dropdown-footer .dr-btn {
+    line-height: 52px;
+    font-size: 16px;
+    color: #077eda;
+}
+
+.dropdown-footer .dr-btn:hover {
+    color: #035faa;
+}
+
+/* 컨테이너 */
+.container {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+}
+
+/* 사이드바 */
+.sidebar {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    top: 0;
+    float: left;
+    background-color: #0073d4;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 74px;
+    transition: all 300ms ease-in-out;
+}
+
+.sidebar-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+
+.nav {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav>ul {
+    margin-top: 30px;
+}
+
+.nav li {
+    position: relative;
+    color: #fff;
+}
+
+.nav>ul>li {
+    padding: 0 20px 0 30px;
+    line-height: 52px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.nav>ul>li.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 52px;
+    content: '';
+    background-color: #035faa;
+    z-index: -1;
+}
+.nav>ul>li.active::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 52px;
+    content: '';
+    background-color: #fff;
+}
+
+.nav-icon {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.sub-list {
+    display: none;
+    padding: 10px 0 10px 35px;
+    line-height: 42px;
+    font-size: 16px;
+}
+
+.nav a {
+    color: #fff;
+    z-index: 20;
+}
+
+.nav .sub-list>li.active a {
+    color: #ffec1b;
+}
+
+.nav>ul>li .ico-list-toggle {
+    position: absolute;
+    top: 6px;
+    right: 11px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/ico-menu-toggle.png);
+    background-position: 0 0;
+    z-index: 99;
+}
+
+.nav>ul>li .ico-list-toggle.active {
+    background-position: 0 40px;
+}
+
+/* 푸터 */
+.sidebar-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: #0073d4;
+    text-align: center;
+    z-index: 99;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #7fc4ff;
+}
+
+/* 페이지 구조 */
+.section {
+    position: relative;
+    height: 100%;
+    margin-left: 260px;
+    background-color: #f5f5f5;
+    overflow: scroll;
+    transition: all 300ms ease-in-out;
+}
+
+.section-header {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.section-content {
+    padding: 30px 20px;
+    min-width: 1003px; 
+}
+
+.section-title {
+    padding-left: 14px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+}
+
+.breadcrumb {
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.breadcrumb ol li {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.breadcrumb ol li:last-child {
+    font-weight: bold;
+}
+
+.breadcrumb ol li a {
+    color: #999;
+}
+
+.breadcrumb ol li a:hover {
+    color: #888;
+}
+
+.breadcrumb ol li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -4px;
+    width: 6px;
+    height: 12px;
+    background: url(../img/icons/ico-breadcrumb-arrow.png) 0 0 / 6px 12px no-repeat;
+}
+
+.section-body {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+/* 검색 */
+.search-area {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-area {
+    position: relative;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+/* 편집에디터 */
+.editor {
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    min-height: 360px;
+}
+
+/* 페이징 */
+.pagination {
+    text-align: center;
+}
+
+.pagination .ico-prev {
+    width: 28px;
+    height: 28px;
+    background: url(../img/icons/ico-prev.png) 0 0 / 100% no-repeat;
+}
+
+.pagination .ico-next {
+    width: 28px;
+    height: 28px;
+    background: url(../img/icons/ico-next.png) 0 0 / 100% no-repeat;
+}
+
+.pagination .ico-prev:hover,
+.pagination .ico-next:hover {
+    background-position: 0 -28px;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    padding: 3px 0;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    color: #999;
+    font-size: 13px;
+}
+
+.pagination a:hover {
+    color: #888;
+}
+
+.pagination a.active {
+    background-color: #077eda;
+    color: #fff;
+}
+
+.pagination>a:first-child {
+    margin-right: 10px;
+}
+
+.pagination>a:last-child {
+    margin-left: 10px;
+}
+
+/* 환경설정 추가 */
+.ip-col-with-btn {
+    position: relative;
+    float: left;
+    width: 89%;
+    margin: 0 1% 10px 0;
+    margin-right: 1%;
+}
+
+.ip-col-btn {
+    float: left;
+    width: 10%;
+}
+
+.ip-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+.btn-ip {
+    width:100%;
+    padding:9px 0; 
+    margin: 0 0 0 0;
+    font: 400 14px 'Noto Sans KR';
+    color: #FFF;
+    background-color:#077eda;
+    border:none;
+    border-radius:3px;
+}
+
+/* 동적 항목 추가 */
+.cell-item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+
+.cell-with-btn {
+    position: relative;
+    float: left;
+    width: 64%;
+    margin-right: 1%;
+}
+
+.add-cell-key {
+    height: 50px;
+}
+
+.add-cell-value {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    padding: 8px 20px;
+    font-size: 13px;
+    color: #333;
+}
+
+/*.cell-input-75 {
+    position: relative;
+    float: left;
+    width: 74%;
+}*/
+
+.cell-btn {
+    float: left;
+    width: 10%;
+}
+
+.btn-cell {
+    width:100%;
+    padding: 15px 0; 
+    margin: 0 0 0 0;
+    font: 400 14px 'Noto Sans KR';
+    color: #FFF;
+    background-color:#077eda;
+    border:none;
+    border-radius:3px;
+}
+
+
+
+
+
+
+/* 상품 이미지 */
+.shop-td {
+    padding: 10px 14px 0 14px;
+}
+
+.shop-img-group  {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 780px;
+    vertical-align: middle;
+}
+
+.shop-200 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.shop-200 .file {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+}
+
+.shop-200 .file .col-25 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.shop-200 .file .upload-name {
+    width: 100% !important;
+    padding: 8px 5px!important;
+    margin-bottom: 5px !important;
+}
+
+.calendar-form.single .calendar-panel {
+    width: 25%;
+    min-width: 200px;
+}
+
+
+/* 모바일 */
+@media(max-width: 767px) {
+
+    /* 관리자 로그인 화면 */
+    .login-header {
+        padding-top: 30px;
+    }
+
+    .login-header .logo {
+        height: 56px;
+    }
+
+    .login-header .logo h1 {
+        background: url(../img/login/login-logo.png) 50% 50%/ 180px auto no-repeat;
+    }
+
+    /* 전체 프레임 */
+    body {
+        overflow: scroll;
+    }
+
+    .wrap {
+        height: auto;
+    }
+
+    /* 관리자 헤더 */
+    .header {
+        position: relative;
+    }
+
+    /* 로고, 사용자 */
+    .logo-area,
+    .logo-area h1,
+    .gnb-items li.gnb-item a.gnb-profile {
+        display: none !important;
+    }
+
+    /* 드롭다운 패널 */
+    .dropdown-panel {
+        position: fixed;
+        width: 80vw;
+        min-width: 230px;
+        max-width: 500px;
+        right: 50%;
+        -ms-transform: translateX(50%);
+        -webkit-transform: -webkit-translateX(50%);
+        -moz-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    /* 컨테이너 */
+    .container {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 74px);
+    }
+
+    .section {
+        margin:0;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+    }
+
+    .section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-content {
+        min-width: 240px !important;
+        padding: 20px 0 30px 0;
+    }
+
+    .section-body {
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    /* 사이드 메뉴 */
+    .sidebar {
+        float: none;
+        position: absolute;
+        top: 0;
+        left: -767px;
+        width: 100% !important;
+        /*height: calc(100vh - 74px);*/
+        height: 100%;
+        max-width: 767px;
+        padding: 0 0 60px 0;
+    }
+
+    .sidebar.mobile {
+        left: 0;
+    }
+
+    .sidebar-scroll {
+        z-index: 1;
+        height: calc(100vh - 114px);
+        padding: 0;
+    }
+
+    .nav ul li a .list-name {
+        visibility: visible;
+    }
+
+    /* 컨테이너 타이틀 */
+    .breadcrumb {
+        display: none;
+    }
+    
+    /* 테이블 영역 */
+    .content-area {
+        padding: 5px 0;
+    }
+
+    .table th {
+        vertical-align: middle;
+        padding: 5px 7px;
+    }
+
+    /* 테이블 A (리스트) */
+    .table.table-typeA {
+        margin: 10px 0 10px;
+    }
+
+    .table.table-typeA td {
+        vertical-align: middle;
+        max-width: 70px !important;
+        padding: 10px 5px;
+        margin: 0 auto;
+        font-size: 12px;
+        word-break: keep-all;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+
+    /* 테이블 B (상세) */
+    .table.table-typeB tr {
+        vertical-align: middle;
+        border-bottom : 0;
+    }
+
+    .table.table-typeB th {
+        vertical-align: middle;
+        padding: 20px 10px;
+        border-bottom: 1px solid #ececec;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .table.table-typeB td {
+        vertical-align: middle;
+        padding: 10px;
+        border-bottom: 1px solid #ececec;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    /* 숨길 테이블A 영역 */
+    .m-hide {
+        display: none !important;    
+    }
+
+    /* comps */
+    .table .col-25,
+    .table .col-50,
+    .table .col-75 {
+        width: 100%;
+    }
+
+    .table .col-25 > .form {
+        margin: 0 0 5px 0;
+    }
+
+    .table .col-50 > .form.form-50,
+    .table .col-50 > button:not(#id_dupl_chk, #email_dupl_chk) {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #postcode {
+        width: 100%;
+    }
+
+    #postcode + button.btn {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+
+    .table .col-50 ~ button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .m-t-center {
+        text-align: center;
+    }
+
+    .ip-col-with-btn {
+        width: 69%;
+    }
+
+    .ip-col-btn {
+        width: 30%;
+    }
+
+    /* 튤팁 */
+    .help {
+        display: none !important;
+    }
+
+    /*모바일 colspan = 2*/
+    .m-col-2 {
+        padding: 10px 0 !important;
+    }
+
+    .checkbox-label,
+    .radio-label {
+        display: inline-block;
+        position: relative;
+        margin: 0 50px 5px 0;
+    }
+
+    /* 공백 용도 ( 달력 ~ 영역 잡기)*/
+    .m-blank {
+        display: inline-block;
+        width: 100%;
+        margin: 5px auto;
+        text-align: center;
+    }
+    
+    /* 썸네일 */
+    .thumb-img {
+        width: auto !important;
+        max-width: 120px !important;
+        height: auto;
+        min-height: auto !important;
+    }
+
+    .preview-img {
+        width: 120px !important;
+        height: 72px !important;
+    }
+
+    .file {
+        width: 60%;
+    }
+
+    /* 갤러리 */
+    .shop-img-group {
+        overflow: hidden;
+        min-width: auto;
+    }
+
+    .shop-200 {
+        width: 50%;
+    }
+
+    .shop-200 .file .btn-file {
+        margin: 0;
+    }
+
+    .shop-200 .file .ico-file-cancel {
+        left: 80% !important;
+    }
+
+    /* 팬션 */
+    #check_in {
+        margin: 0 0 5px 0;
+    }
+
+    /* 모달 */
+    .modal-panel {
+        width: 90%;
+    }
+
+    .modal-panel.sms {
+        width: 100%;
+        height: 100vh;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        overflow-y: scroll;
+        padding: 80px 10px 30px 10px;
+        margin: 0 auto;
+    }
+
+    .modal-panel.sms::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modal-panel.sms textarea {
+        width: 100%;
+        min-height: 120px;
+        margin: 0;
+        border: 1px solid #CCC;
+    }
+
+}
+/* 드래그 앤 드랍 Ui */
+/* 드래그 아이템 */
+.ui-sortable-handle {
+    position: relative;
+    cursor: grab;
+}
+
+.table.table-typeA tr:before {
+    content: '';
+    position: absolute;
+    left: 23px;
+    width: 0px;
+    height: 28px;
+    margin: 7px 0 0 0;
+    background: transparent url('../img/icons/ico-movable.png') 50% 50% / 22px auto no-repeat;
+    transition: all .3s ease-in-out;
+}
+
+.table.table-typeA thead tr:before {
+    position: static;
+}
+
+.ui-sortable-handle:before {
+    content: '';
+    width: 22px !important;
+}
+
+.ui-sortable-handle:hover {
+    background-color: #E3F2FC !important;
+}
+
+.ui-sortable-handle:hover:before {
+     background-color: #EFEFEF !important;
+     border-radius: 3px;
+}
+
+
+/* 드래그 가이드 */
+.modify-guide-area {
+    /*position: relative;*/
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.modify-guide-area.hide {
+    display: none;
+}
+
+.modify-guide-area span {
+    position: relative;
+    padding: 0 0 0 24px;
+    font: 400 14px 'Noto Sans KR';
+    color: #ADADAD;
+}
+
+.modify-guide-area span > i {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 28px;
+    background: transparent url('../img/icons/ico-movable.png') 50% 50%/22px auto no-repeat;
+}
+
+/* 드래그 제어 버튼 */
+.width-100 {
+    width: 100%;
+}
+
+.drag-cont {
+    display: block;
+}
+
+.prev-submit.hide,
+.drag-cont.hide {
+    display: none;
+}

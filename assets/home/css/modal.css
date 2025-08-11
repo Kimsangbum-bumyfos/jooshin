@@ -1,0 +1,448 @@
+@charset "UTF-8";
+/* modal.css */
+
+/* 실시간 예약 아이프레임 */
+.modal-rt {
+	display: none;
+	position: fixed;
+	top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: .0;
+	z-index: 9000;
+}
+
+.modal-rt.active {
+	opacity: 1;
+	display: block;
+}
+
+.rt-dim {
+	position: fixed;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+/*    width: 100%;
+    height: 100%;*/
+    z-index: 9001;
+}
+
+.rt-wrap {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	min-height: 400px;
+	height: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	z-index: 9002;
+
+
+	/*position: fixed;
+	top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch; 
+	z-index: 9002;*/
+}
+
+/*.rt-wrap::-webkit-scrollbar { 
+    display: none; 
+}*/
+
+.rt-wrap iframe {
+	/*vertical-align: middle;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch; */
+	 /*safari */
+}
+
+/* 지점안내 모달 */
+.modal {
+	opacity: 0;
+    visibility: hidden;
+}
+
+.modal.active {
+	opacity: 1;
+    visibility: visible;
+}
+
+.modal-dimmed {
+	position: fixed;
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9001;
+}
+
+.modal-full {
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width: 830px;
+	height: 470px;
+	margin:0 auto;
+	z-index: 9999;
+}
+
+.modal-box {
+	background-color: #FFF;
+}
+
+.modal.active .modal-full-B {
+	display: block;
+}
+
+.modal-full-B {
+	display: none;
+	position: fixed;
+	top:0%;
+	left:0%;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	margin:0 auto;
+	z-index: 9999;
+}
+
+.store-modal-wrap {
+	position: relative;
+	padding: 30px 45px 40px 45px;
+}
+
+.store-modal-header {
+	position: relative;
+	border-bottom: 2px solid #333;
+}
+
+.store-modal-header-title {
+	max-width: 700px;
+	padding-bottom: 24px;
+	font-size: 26px;
+	font-weight: 400;
+	color: #333;
+	line-height: 26px;
+	overflow: hidden;
+}
+
+.store-modal-header-close {
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	top:0;
+	right: 0;
+	width: 23px;
+	height: 23px;
+	background: url('../img/common/ico-cancel-black.png') 50%/100% no-repeat;
+	cursor: pointer;
+}
+
+.store-modal-container {
+	position: relative;
+	padding-top: 24px;
+}
+
+.store-modal-map {
+	float: left;
+	width: 456px;
+	height: 314px;
+	background-color: #ccc;
+}
+
+.store-modal-group-text {
+	float: left;
+	width: 284px;
+	padding: 30px 10px 0px 30px;
+}
+
+.store-modal-text {
+	position: relative;
+	display: block;
+	padding-bottom: 24px;
+	overflow: hidden;
+}
+
+.store-modal-text.active {
+	display: none;
+}
+
+.store-modal-info {
+	padding-left: 36px;
+	padding-top: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #666;
+}
+
+.modal-ico {
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	left:0;
+	width: 24px;
+	height: 22px;
+}
+
+.modal-ico.ico-modal-point-A {
+	top:1px;
+	background: url('../img/icons/ico-modal-point-A.png') 50%/100% no-repeat;
+}
+
+.modal-ico.ico-modal-point-B {
+	top:0;
+	background: url('../img/icons/ico-modal-point-B.png') 50%/100% no-repeat;
+}
+
+.modal-ico.ico-modal-point-C {
+	top:0;
+	background: url('../img/icons/ico-modal-point-C.png') 50%/100% no-repeat;
+}
+
+.modal-ico.ico-modal-point-D {
+	top:2px;
+	background: url('../img/icons/ico-modal-point-D.png') 50%/100% no-repeat;
+}
+
+.modal-ico.ico-modal-point-E {
+	top:2px;
+	background: url('../img/icons/ico-modal-point-E.png') 50%/100% no-repeat;
+}
+
+/* 팝업 */
+.popup-modal {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 1500;
+}
+
+.popup-modal a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.popup-img-pc {
+    display: block;
+}
+
+.popup-img-m {
+    display: none;
+}
+
+.popup-contents {
+    position: relative;
+    width:402px;
+    height: 456px;
+}
+
+.popup-contents img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.popup-btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 7px 8px;
+    background-color: #222;
+}
+
+.popup-btn .checkbox {
+	display: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.popup-desc {
+    font: 400 15px 'Noto Sans KR';
+    color: #FFF;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.popup-btn a.btn-aside-close {
+    top: 10px;
+    right: 8px;
+}
+
+/* + 팝업 클로즈 추가 */
+.popup-btn a.btn-aside-close{
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/common/ico-cancel-white.png) 50% 50% / 16px auto no-repeat;
+}
+
+/* 모바일 & 태블릿 */
+@media(max-width: 1023px) {
+
+
+/*	.rt-wrap {
+		position: fixed;
+		left: 0;
+		top:0;
+		transform: translateX(0);
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}*/
+
+	/* 팝업 */
+	.popup-modal {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        min-width: 280px;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .popup-contents {
+    	min-width: 280px;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .popup-btn {
+    	min-width: 280px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .popup-img-pc {
+        display: none;
+    }
+
+    .popup-img-m {
+        display: block;
+    }
+
+}
+
+/* modal.css 미디어쿼리 : 모바일 */
+@media(max-width: 767px) {
+
+	.modal-full {
+		width: 100%;
+		max-width: 420px;
+	}
+
+	.modal-full.store-modal {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%,-40%);
+	}
+
+	.modal-box {
+		margin:0px 20px;
+	}
+
+	.store-modal-wrap {
+		padding: 16px 10px;
+		min-height: 300px;
+	}
+
+	.store-modal-header-title {
+		font-size: 18px;
+		padding-bottom: 16px;
+		line-height: 16px;
+	}
+
+	.store-modal-header-close {
+		width: 15px;
+		height: 15px;
+	}
+
+	.store-modal-container {
+		padding-top: 10px;
+	}
+
+	.store-modal-map {
+		float: none;
+		width: 100%;
+		min-height: 220px;
+		height: auto;
+		max-height: 200px;
+	}
+
+	.store-modal-group-text {
+		float: left;
+		width: 100%;
+		height: 100%;
+		padding: 30px 10px 0 10px;
+	}
+
+	.store-modal-text {
+		padding-bottom: 20px;
+	}
+
+	.store-modal-text:last-child{
+		padding-bottom: 0px;
+	}
+
+	.store-modal-info {
+		font-size: 13px;
+		padding-left: 32px;
+		padding-top: 4px;
+	}
+
+	.modal-ico {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		left:0;
+		width: 22px;
+		height: 20px;
+	}
+
+
+}
+
+/* modal.css 미디어쿼리 : 태블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+/*	.rt-wrap {
+		position: fixed;
+		left: 0;
+		top:0;
+		transform: translateX(0);
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}*/
+
+	.modal-full.store-modal {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%,-40%);
+	}
+}

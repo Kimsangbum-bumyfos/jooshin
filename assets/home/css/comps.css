@@ -1,0 +1,253 @@
+/*-------------------------------------------------------------------
+    작성날짜 : 2019-04-23 박일형
+    수정날짜 : 
+    *(주의사항 : )
+-------------------------------------------------------------------*/
+@charset "UTF-8";
+/*
+    * comps.css
+    * 1024 ~ (PC)
+*/
+/* 서브페이지 더보기 버튼 */
+.list-btn-area {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn-list-more {
+	display: inline-block;
+	position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 0 90px 0;
+	border: 1px solid #8F8F8F;
+    border-radius: 200px;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #8F8F8F 50%, #8F8F8F);
+    background-position: 100% 0;
+    background-size: 230% 100%;
+    transition: all 0.25s ease-in;
+}
+
+.btn-list-more.board-list {
+    width: 120px;
+    height: 50px;
+}
+
+.btn-list-more:before,
+.btn-list-more:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8F8F8F;
+}
+
+.btn-list-more:before {
+    width: 24px;
+    height: 2px;
+}
+
+.btn-list-more:after {
+    width: 2px;
+    height: 24px;
+}
+
+.btn-list-more.board-list:before,
+.btn-list-more.board-list:after {
+    width: 0;
+    height: 0;
+}
+
+.btn-list-more.active {
+    display: none;
+}
+
+.btn-list-more span {
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    font: 300 13px 'scd';
+    color: #333;
+}
+
+.btn-list-more.board-list span {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translateX(0%);
+    font: 400 15px 'scd';
+}
+
+/* view 버튼 */
+.btn-view button {
+    position: relative;
+    padding: 13px 115px 13px 20px;
+    background-color: #333;
+    line-height: 1;
+}
+
+.btn-view button > span {
+    font: 500 14px 'scd';
+    color: #FFF;
+}
+
+.btn-view button > span:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -ms-transform: rotate(45deg) translateY(-50%);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    -moz-transform: rotate(45deg) translateY(-50%);
+    -o-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    transition: all .4s ease-in-out;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+
+/* paging */
+.pagination {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pagination > span {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination > span.active {
+    color: red;
+}
+
+
+
+/* 더보기 */
+.js-list-more {
+    margin: 35px auto 0 auto;
+    text-align: center;
+}
+
+.js-list-more.hide {
+    display: none;
+}
+
+.js-list-more button {
+    display: inline-block;
+    padding: 17px 55px;
+    border-radius: 25px;
+    border: 1px solid #D3D3D3;
+    font: 500 15px 'Noto Sans KR';
+    color: #8F8F8F;
+    line-height: 1;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #333 50%, #333);
+    background-position: 100% 0;
+    background-size: 240% 100%;
+    transition: all 0.25s ease-in;
+}
+
+
+
+
+
+
+/* 목록 */
+#go_list_box {
+    margin: 35px auto 40px auto;
+    text-align: center;
+}
+
+#go_list {
+    display: inline-block;
+    padding: 17px 55px;
+    border-radius: 25px;
+    border: 1px solid #D3D3D3;
+    font: 500 15px 'Noto Sans KR';
+    color: #8F8F8F;
+    line-height: 1;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #333 50%, #333);
+    background-position: 100% 0;
+    background-size: 240% 100%;
+    transition: all 0.25s ease-in;
+
+
+}
+
+/* 모바일 & 태블릿 공통 */
+@media(max-width: 1023px) {
+    
+    /* 서브페이지 더보기 버튼 */
+    .btn-list-more {
+        width: 50px;
+        height: 50px;
+        margin: 0 0 50px 0;
+    }
+
+    .btn-list-more:before {
+        width: 20px;
+        height: 2px;
+    }
+
+    .btn-list-more:after {
+        width: 2px;
+        height: 20px;
+    }
+
+    .btn-list-more span {
+        bottom: -30px;
+    }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 모바일 */
+@media(max-width: 767px) {
+    
+}
+
+
+/* PC */
+@media(min-width: 1023px) {
+    
+    /* 더보기 호버 효과 */
+    .btn-list-more:hover {
+        background-position: 0 0;
+    }
+    .btn-list-more:hover:before,
+    .btn-list-more:hover:after {
+        content: '';
+        background-color: #FFF;
+    }
+
+    .btn-list-more.board-list:hover span {
+        color: #FFF;
+    }
+
+    /* view 버튼 */
+    .btn-view button:hover >span:after {
+        right: 10px;
+    }
+    
+    /*
+        * js 더보기, 목록 PC 호버 효과
+    */
+    .js-list-more button:hover,
+    #go_list:hover {
+        background-position: 0 0;
+        color: #FFF;
+    }
+}

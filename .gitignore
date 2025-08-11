@@ -1,0 +1,9 @@
+/uploads/
+/cache/
+/logs/
+.htaccess
+robots.txt
+
+/application/controllers/Temp.php
+/application/config/development/
+/application/config/production/

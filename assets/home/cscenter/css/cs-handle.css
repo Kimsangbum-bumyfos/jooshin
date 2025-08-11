@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* 고객센터 */
+/* PC 우선으로 수정 */
+.cs-modal-content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.scroll-top-area {
+    position: fixed;
+    bottom: 56px;
+    right: 50px;
+    z-index: 2900;
+    opacity: 0;
+    visibility: hidden;
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,.25);
+    text-align: center;
+    vertical-align: middle;
+    transition: visibility .5s, opacity .7s ease-in-out;
+    cursor: pointer;
+}
+
+.scroll-top {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 3000;
+    width: 64px;
+    height: 64px;
+    background: #CBCBCB url('../img/ico-float-top-pc.png') 50% 30%/18px auto no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-scroll-top {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font: 600 16px 'scd';
+    color: #FFF;
+}
+
+.scroll-top-area.active,
+.scroll-top-area.active .btn-scroll-top {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cs-handle-panel {
+    position: fixed;
+    bottom: 142px;
+    right: 50px;
+    z-index: 2900;
+    width: 70px;
+    height: 70px;
+    background-color: #FFF;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,.25);
+    text-align: center;
+    vertical-align: middle;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.cs-handler {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 3000;
+    width: 64px;
+    height: 64px;
+    background: #00B6AB url(../img/ico-msg.png) 50% 50% / 17px auto no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.cs-helper {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    font: 500 15px 'Noto Sans KR';
+    color: #333;
+}
+
+.modal#csCenter {
+    display: none;
+    position: fixed;
+    opacity: 0;
+    width: 470px;
+    height: 696px;
+    right: 50px;
+    bottom: 56px;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 8px 8px 20px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 8px 8px 20px 5px rgba(0,0,0,0.15);
+    box-shadow: 8px 8px 20px 5px rgba(0,0,0,0.15);
+    z-index: 8000;
+}
+
+.modal#csCenter.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal#csCenter iframe {
+    display: block;
+    width: 470px;
+    height: 696px;
+    border-radius: 8px;
+}
+
+
+@media(max-width: 1023px) {
+
+    .scroll-top-area,
+    .scroll-top-area.active,
+    .scroll-top-area .btn-scroll-top {
+        display: none;
+    }
+
+    .cs-handle-panel {
+        display: none;
+    }
+
+    .cs-handler {
+        display: none;
+        z-index: 8400;
+    }
+    
+    .scroll-top-area {
+        bottom: 20px;
+        right: 15px;
+        width: 57px;
+        height: 57px;
+    }
+
+    .scroll-top {
+        width: 51px;
+        height: 51px;
+        background: #F1F1F1 url('../img/ico-float-top-pc.png') 50% 30%/14px auto no-repeat;
+    }
+
+    .btn-scroll-top {
+        font: 700 13px 'Noto Sans KR';
+    }
+
+    .cs-handle-panel {
+        bottom: 89px;
+        right: 15px;
+        width: 57px;
+        height: 57px;
+    }
+
+    .cs-handler {
+        z-index: 8400;
+        width: 51px;
+        height: 51px;
+        background: #432DE5 url(../img/ico-msg.png) 50% 50% / 17px auto no-repeat;
+    }
+
+    .cs-helper {
+        display: none;
+    }
+
+    .modal#csCenter {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .modal#csCenter.active {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal#csCenter iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+/* 1024px이상 PC화면 */
+@media (min-width: 1024px) {
+        
+    .cs-handle-panel.active,
+    .cs-handle-panel:focus,
+    .cs-handle-panel:hover {
+        width: 223px;
+        border-radius: 50px;
+    }
+
+    .cs-handle-panel.active .cs-handler,
+    .cs-handle-panel:focus .cs-handler,
+    .cs-handle-panel:hover .cs-handler {
+        right: 156px;
+    }
+
+    .cs-handle-panel.active .cs-helper,
+    .cs-handle-panel:focus .cs-helper,
+    .cs-handle-panel:hover .cs-helper {
+        visibility: visible;
+        opacity: 1;
+        left: 8px;
+        transition: visibility .5s, opacity 1.5s ease-in-out;
+    }
+}

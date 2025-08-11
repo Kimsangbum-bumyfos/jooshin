@@ -1,0 +1,243 @@
+/*-------------------------------------------------------------------
+    작성날짜 : 2020-03-24 박일형
+    수정날짜 : 
+    *(주의사항 : )
+-------------------------------------------------------------------*/
+@charset "UTF-8";
+
+#wrap_search {
+	padding: 0 0 120px 0;
+}
+
+/* 결과 텍스트 */
+#list_txt {
+	position: relative;
+	padding: 40px 0;
+	text-align: center;
+}
+
+#list_txt.hide {
+	display: none;
+}
+
+#list_txt > h3 {
+	padding: 0 0 4px 0;
+}
+
+#list_txt > h3,
+#list_txt > p {
+	font: 300 22px 'Noto Sans KR';
+	color: #333;
+	line-height: 1.4;
+}
+
+#list_txt > h3 > strong {
+	font-weight: 500;
+	color: #E61400;
+}
+
+/* list */
+#list_result {
+	position: relative;
+	padding: 28px 0 10px 0;
+	border-top: 2px solid #333;
+}
+
+#list_result.hide {
+	display: none;
+}
+
+/* list item */
+#list_result .list-item {
+	display: inline-block;
+	float: left;
+	width: calc(50% - 12px);
+	margin: 17px 12px;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+}
+
+#list_result .list-item:nth-of-type(2n){
+	margin-right: 0;
+}
+
+#list_result .list-item:nth-of-type(2n-1){
+	margin-left: 0;
+}
+
+#list_result .list-item > a {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.list-item-img-area {
+	float: left;
+	position: relative;
+	width: 35%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.list-item-img {
+	width: 100%;
+	padding-bottom: 99%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.list-desc {
+	position: absolute;
+	left: 35%;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 11px 5px 11px 20px;
+}
+
+.list-desc > span {
+	margin: 0 0 4px 0;
+	font: 500 14px 'Noto Sans KR';
+	color: #333;
+	line-height: 1.5em;
+}
+
+.list-desc > span > i {
+	font-weight: 400;
+}
+
+.list-desc > span:before {
+	content: '\00B7';
+	padding: 0 3px 0 0;
+}
+
+.list-desc > span:last-child {
+	margin-bottom: 0;
+}
+
+/* 검색 결과 없음 */
+#list_no_result {
+	padding: 170px 0;
+	text-align: center;
+}
+
+#list_no_result > h3 {
+	padding: 0 0 20px 0;
+	font: 300 22px 'Noto Sans KR';
+	color: #333;
+}
+
+#search_val_no {
+	font: 500 22px 'Noto Sans KR';
+	color: #E61400;
+}
+
+#list_no_result p {
+	padding: 0 0 2px 0;
+	font: 500 15px 'Noto Sans KR';
+	color: #333;
+	line-height: 1.4;
+}
+
+#list_no_result.hide {
+	display: none;
+}
+
+/* 모바일 & 태블릿 공통 */
+@media(max-width: 1023px) {
+	#wrap_search {
+		padding: 0 0 40px 0;
+	}
+
+	/* 결과 텍스트 */
+	#list_txt {
+		padding: 25px 15px;
+	}
+
+	#list_txt > h3,
+	#list_txt > p {
+		font: 300 20px 'Noto Sans KR';
+		line-height: 1.4;
+	}
+
+	#list_txt > h3 > strong {
+		font-weight: 500;
+	}
+
+	/* list */
+	#list_result {
+		padding: 10px 0 0 0;
+		margin: 0 15px;
+	}
+
+	/* list item */
+	#list_result .list-item {
+		width: calc(50% - 7.5px);
+		margin: 15px 7.5px;
+	}
+
+	#list_result .list-item:nth-of-type(2n){
+		margin-right: 0;
+	}
+
+	#list_result .list-item:nth-of-type(2n-1){
+		margin-left: 0;
+	}
+
+	#list_result .list-item > a {
+		padding: 8px;
+	}
+
+	.list-desc {
+		padding: 10px 5px 10px 18px;
+	}
+
+	/* 검색 결과 없음 */
+	#list_no_result {
+		padding: 120px 15px;
+	}
+
+	#list_no_result > h3 {
+		padding: 0 0 20px 0;
+		font: 300 20px 'Noto Sans KR';
+		line-height: 1.4;
+	}
+
+	#search_val_no {
+		font: 500 20px 'Noto Sans KR';
+	}
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+/* 모바일 */
+@media(max-width: 767px) {
+	/* list item */
+	#list_result .list-item {
+		width: 100%;
+		margin: 7.5px 0;
+	}
+
+	#list_result .list-item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/* 모바일 가로화면 */
+@media (min-width: 500px) and (max-width: 768px) {
+
+    
+}
+

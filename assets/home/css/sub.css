@@ -1,0 +1,804 @@
+/*-------------------------------------------------------------------
+    작성날짜 : 2019-12-18 박일형
+    수정날짜 : 
+    *(주의사항 : )
+-------------------------------------------------------------------*/
+@charset "UTF-8";
+
+/*
+    * sub.css
+    * 서브 헤더
+    * 1024 ~ (PC)
+    * 공통
+    * 브랜드
+    * 카테고리
+*/
+/* 서브페이지 헤더 */
+.header {
+    background-color: #FFF;
+}
+
+.header-nav-link {
+    color: #333;
+}
+
+
+/* gnb 검색 */
+#gnbSearch,
+#gnbSearch_m {
+    border: 1px solid #333;
+}
+
+/* 카테고리 */
+.section-category-post {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0;
+    margin: 0 auto;
+	background-color: #FFF;
+    border-bottom: 1px solid #DADADA;
+	text-align: center;
+}
+
+.section-category-post.hide {
+	display: none;
+}
+
+.category-group.category ul li {
+	display: inline-block;
+    width: 19.8%;
+    margin: 30px auto 20px auto;
+    padding: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.category-group.category ul li span {
+	font: 300 16px 'scd';
+	color: #333;
+}
+
+.category-group.category ul li.active span {
+	position: relative;
+    font: 600 16px 'scd';
+	color: #00B6AB;
+}
+
+.category-group.category ul li.active span:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -21px;
+	width: 100%;
+	height: 3px;
+	background-color: #00B6AB;
+}
+
+/* ckeditor 속성 */
+#youtubeWrap {
+    position: relative;
+    width: 80%;
+    padding-bottom: 45.25%;
+}
+
+#youtubeWrap iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 약관 페이지 */
+/* 이용약관 */
+#email_wrap .header-area {
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.terms {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    padding: 160px 20px 2rem 20px;
+    margin: 0 auto;
+}
+
+.terms-top-title {
+    margin-bottom: 1.875rem;
+    font-family: 'NanumSquareRound';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #333;
+}
+
+.terms-box {
+    margin-bottom: 1.875rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+.terms-box ul {
+    margin-bottom: 20px;
+}
+
+.terms-box .terms-sub {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.terms-box .terms-sub2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.terms-box .terms-indent {
+    text-indent: 10px;
+}
+
+.terms-box .terms-indent-B {
+    text-indent: 20px;
+}
+
+.terms-box ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.terms-box ul li::before {
+    content: '\00B7';
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #666;
+}
+
+.terms-box.center {
+    text-align: center;
+}
+
+.terms-bold {
+    font-weight: 700;
+}
+
+.m-off {
+    display: inline-block;
+    padding:0 5px;
+}
+
+/* 이용약관 테이블 */
+.terms-table-list {
+    position: relative;
+    width: 100%;
+    clear: both;
+    margin: 16px 0 20px 0;
+    border-top: 1px solid #333;
+    font-family: 'NanumGothic';
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    color: #333;
+}
+
+.terms-table-list tbody th {
+    padding: 5px 0;
+    background-color: #F8F8F8;
+    border: 1px solid #C7C7C7;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.terms-table-list tbody td {
+    padding: 5px 0;
+    background-color: #FFF;
+    border: 1px solid #C7C7C7;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.terms-close {
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: -webkit-rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: transparent url('../img/icons/ico-cancel-black.png') 50% 50%/19px auto no-repeat;
+    cursor: pointer;
+}
+
+.row.text-right {
+    text-align: right;
+}
+
+/*
+    * 회사소개
+    * 고객문의
+*/
+/* 회사소개 */
+#company {
+    padding: 60px 0 40px 0;
+}
+
+.company-info {
+    float: left;
+    width: calc(100% - 380px);
+}
+
+.c-title h2 {
+    position: relative;
+    padding: 0 0 25px 0;
+    font: 400 24px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.4;
+}
+
+.c-title h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 44px;
+    height: 2px;
+    background-color: #333;
+}
+
+.c-desc {
+    padding: 40px 130px 0 0;
+}
+
+.c-desc p {
+    font: 400 15px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.4;
+}
+
+.c-img {
+    float: right;
+    width: 380px;
+    height: 420px;
+    margin: 20px 0 0 0;
+    background-size: cover;
+}
+
+/* 연혁 */
+.his-table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #FFF;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    margin: 0 auto 50px auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.his-table th,
+.his-table td {
+    padding: 10px;
+}
+
+.his-table th {
+    font: 500 18px 'Noto Sans KR';
+    color: #333;
+    text-align: center;
+}
+
+.his-table td {
+    font: 400 16px 'Noto Sans KR';
+    color: #333;
+    text-align: left;
+}
+
+.his-table td.his-rd {
+    vertical-align: top;
+}
+
+.his-table td.his-rd div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #E61400;
+    border-radius: 100px;
+}
+
+.his-table td.his-rd div:before {
+    content: '';
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: #FFF;
+    border-radius: 100px;
+}
+
+.his-table td.his-rd div:after {
+    content: '';
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    bottom: -250px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 2px;
+    height: 250px;
+    background-color: #E61400;
+}
+
+
+/* 고객문의 */
+.cs-title {
+    
+}
+
+.cs-title > h3 {
+    padding: 45px 0 20px 0;
+    font: 300 22px 'Noto Sans KR';
+    color: #333;
+    line-height: 1;
+}
+
+.cs-title > h3 > br {
+    display: none;
+}
+
+.cs-title > h3 > strong {
+    font-weight: 500;
+}
+
+.cs-wrap {
+    padding: 16px 0 0 0;
+    border-top: 2px solid #333;
+}
+
+.cs-form-wrap {
+    padding: 0 0 45px 0;
+}
+
+.cs-form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 8px 0;
+
+}
+
+.cs-form input,
+.cs-form textarea {
+    font: 400 16px 'Noto Sans KR';
+    color: #333;
+    border: 1px solid #D3D3D3;
+}
+
+.cs-form input {
+    width: 100%;
+    padding: 11px 15px 11px 25px;
+}
+
+.cs-form textarea {
+    width: 100%;
+    height: 185px;
+    padding: 11px 15px 11px 25px;
+}
+
+.cs-form {
+
+}
+
+
+/* 체크박스, 라디오 공통 */
+.cs-checkbox-desc {
+    position: relative;
+    line-height: 1.4;
+    font: 400 16px 'Noto Sans KR';
+    color: #333;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* 체크박스 */
+input[name="checkbox"] {
+    display:none;
+}
+
+input[name="checkbox"] + label span {
+    display:inline-block;
+    width:27px;
+    height:27px;
+    margin: 0px 10px 4px 0;
+    vertical-align:middle;
+    background:url(../img/icons/ico-checkbox.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[name="checkbox"]:checked + label span {
+    background:url(../img/icons/ico-checkbox.png) bottom no-repeat;
+}
+
+.cs-agree {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 15px 20px;
+    margin: 0 0 10px 0;
+    background-color: #F8F8F8;
+    border: 1px solid #CBCBCB;
+    overflow: auto;
+}
+
+.cs-agree h4 {
+    font: 500 15px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.4;
+}
+
+.cs-agree p {
+    padding: 0 0 2px 0;
+    font: 400 14px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.4;
+}
+
+/* 문의버튼 */
+.cs-form.with-btn {
+    margin: 16px auto 0 auto;
+    text-align: center;
+}
+
+.cs-form.with-btn button {
+    display: inline-block;
+    padding: 17px 55px;
+    border-radius: 25px;
+    border: 1px solid #D3D3D3;
+    font: 500 15px 'Noto Sans KR';
+    color: #8F8F8F;
+    line-height: 1;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #333 50%, #333);
+    background-position: 100% 0;
+    background-size: 250% 100%;
+    transition: all 0.25s ease-in;
+}
+
+
+#cs_map {
+    width: 100%;
+    height: 460px;
+}
+
+.cs-addr {
+    padding: 25px 0;
+}
+
+.cs-addr p {
+    font: 400 16px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.5;
+}
+
+.cs-summary {
+    padding: 0 0 30px 0;
+}
+
+.cs-icon {
+    float: left;
+    min-width: 256px;
+    padding: 30px 0 30px 65px;
+}
+
+.cs-icon.tel {
+    background: transparent url('../img/icons/ico-cs-tel.png') 0% 50%/50px 50px no-repeat;
+}
+
+.cs-icon.mail {
+    background: transparent url('../img/icons/ico-cs-mail.png') 0% 50%/50px 50px no-repeat;   
+}
+
+.cs-icon.time {
+    background: transparent url('../img/icons/ico-cs-time.png') 0% 50%/50px 50px no-repeat;
+}
+
+.cs-icon > p {
+    font: 400 16px 'Noto Sans KR';
+    color: #333;
+    line-height: 1.4;
+}
+
+.cs-icon > p > strong {
+    font-weight: 500;
+}
+
+/* 모바일 & 태블릿 공통 */
+@media(max-width: 1023px) {
+       
+    
+    .terms {
+        padding: 90px 20px 2rem 20px;
+    }
+
+    /*
+        * 회사소개
+        * 고객문의
+    */
+    /* 회사소개 */
+    #company {
+        padding: 40px 15px 30px 15px;
+    }
+
+    .company-info {
+        width: 60%;
+        padding: 0 15px 0 0;
+    }
+
+    .c-title h2 {
+        padding: 25px 0 25px 0;
+        font: 400 20px 'Noto Sans KR';
+        line-height: 1.4;
+    }
+
+    .c-title h2 > br {
+        display: none;
+    }
+
+    .c-desc {
+        padding: 30px 50px 0 0;
+    }
+
+    .c-desc p {
+        font: 400 14px 'Noto Sans KR';
+        line-height: 1.5;
+    }
+
+    .c-img {
+        width: 40%;
+        height: auto;
+        padding-bottom: 44%;
+        margin: 0 auto;
+        background: 50% 50% /100% auto no-repeat;
+    }
+
+    .his-table-area {
+        position: relative;
+        padding: 0 7px;
+    }
+
+    .c-title.his {
+        padding: 0 8px;
+    }
+
+    /* 고객문의 */
+    #cs_wrap {
+        padding: 0 15px;
+    }
+
+    .cs-title > h3 {
+        padding: 30px 0 15px 0;
+        font: 300 20px 'Noto Sans KR';
+        line-height: 1.4;
+    }
+
+    .cs-title > h3 > strong {
+        font-weight: 500;
+    }
+
+    .cs-wrap {
+        padding: 12px 0 0 0;
+    }
+
+    .cs-form-wrap {
+        padding: 0 0 35px 0;
+    }
+
+    .cs-form {
+        margin: 6px 0;
+    }
+
+    .cs-form input,
+    .cs-form textarea {
+        font: 400 15px 'Noto Sans KR';
+    }
+
+    .cs-form input {
+        padding: 8px 12px 8px 20px;
+    }
+
+    .cs-form textarea {
+        height: 150px;
+        padding: 8px 12px 8px 20px;
+    }
+
+    /* 체크박스, 라디오 공통 */
+    .cs-checkbox-desc {
+        font: 400 15px 'Noto Sans KR';
+    }
+
+    /* 체크박스 */
+    input[name="checkbox"] + label span {
+        width:22px;
+        height:22px;
+        margin: 0px 8px 4px 0;
+        background:url(../img/icons/ico-checkbox.png) left top / 22px 44px no-repeat;
+    }
+
+    input[name="checkbox"]:checked + label span {
+        background:url(../img/icons/ico-checkbox.png) bottom / 22px 44px  no-repeat;
+    }
+
+    /* 문의버튼 */
+    .cs-form.with-btn {
+        margin: 10px auto 0 auto;
+    }
+
+    #cs_map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .cs-addr {
+        padding: 20px 0 15px 0;
+    }
+
+    .cs-addr p {
+        font: 400 15px 'Noto Sans KR';
+        line-height: 1.5;
+    }
+
+    .cs-summary {
+        padding: 0 0 20px 0;
+    }
+
+    .cs-icon {
+        padding: 25px 0 25px 55px;
+    }
+
+    .cs-icon.tel {
+        background: transparent url('../img/icons/ico-cs-tel.png') 0% 50%/40px 40px no-repeat;
+    }
+
+    .cs-icon.mail {
+        background: transparent url('../img/icons/ico-cs-mail.png') 0% 50%/40px 40px no-repeat;   
+    }
+
+    .cs-icon.time {
+        background: transparent url('../img/icons/ico-cs-time.png') 0% 50%/40px 40px no-repeat;
+    }
+
+    .cs-icon > p {
+        font: 400 15px 'Noto Sans KR';
+        line-height: 1.4;
+    }
+
+    .cs-icon > p > strong {
+        font-weight: 500;
+    }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+/* 모바일 */
+@media(max-width: 767px) {
+
+    /* 회사소개 */
+    #company {
+        padding: 30px 15px 20px 15px;
+    }
+
+    .company-info {
+        float: none;
+        width: 100%;
+    }
+
+    .c-img {
+        float: none;
+        width: 100%;
+        padding-bottom: 92%;
+    }
+
+    .c-desc {
+        padding: 30px 20px 0 0;
+    }
+
+    /* 고객문의 */
+    .cs-title > h3 > br {
+        display: block;
+    }
+}
+
+/* 모바일 가로화면 */
+@media (min-width: 500px) and (max-width: 768px) {
+    
+    
+}
+
+/* PC */
+@media(min-width: 1023px) {
+
+    .cs-form.with-btn button:hover {
+        background-position: 0 0;
+        color: #FFF;
+    }
+   
+}
+
+
+#editorContents {
+    width: 100%;
+    max-width: 100%;
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+/* 에디터 스타일 덮어쓰기 */
+#editorContents img {
+    padding: 20px 0;
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+#youtubeWrap {
+    position: relative;
+    width: 80%;
+    padding-bottom: 45.25%;
+}
+
+#youtubeWrap iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#editorContents ol {
+    padding-left: 20px;
+    list-style-position: inside;
+    list-style: decimal;
+}
+
+#editorContents ul {
+    padding-left: 20px;
+    list-style-position: inside;
+    list-style: disc;
+}
+
+#editorContents table {
+    width: 100% !important;
+    border: 2px solid #333;
+}
+
+#editorContents table thead {
+    border-bottom: 2px solid #333;
+}
+
+#editorContents table th,
+#editorContents table td {
+    padding: 2px;
+    border: 1px solid #666;
+    background-color: #FFF;
+}
+
+#editorContents strong {
+    font-weight: bold;
+}
