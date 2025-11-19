@@ -416,10 +416,10 @@ var pd = {
         var depth_3;
         switch (depth_2) {
             case "계측장비": // 계측장비
-                var depth_3 = ['ALL', 'JSH', 'TML', 'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
+                var depth_3 = ['ALL', 'JSH', 'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
                 break;
             case "스트레인게이지":
-                var depth_3 = ['ALL','TML', 'MM', 'KYOWA', 'SHOWA', '기타'];
+                var depth_3 = ['ALL', 'MM', 'KYOWA', 'SHOWA', '기타'];
                 break;
             case "악세사리":
                 var depth_3 = ['ALL','Adhesives', 'Coating Materials', 'Gauge installation Tape', 'Extension Cable', 'Spot welder', 'Strain Gauge Clamp', 'Strain Gauge Installation Tool kit', '기타'];
@@ -437,16 +437,16 @@ var pd = {
                 var depth_3 = ['ALL', 'Axial', 'High Temperature Axial', 'Clip-on Gauge', 'Deflectometers', 'Laser Extensometers', 'Calibrators', '기타'];
                 break;
             case "토압계":
-                var depth_3 = ['ALL','JSH', 'TML', 'KYOWA', 'SSK', '기타'];
+                var depth_3 = ['ALL','JSH',  'KYOWA', 'SSK', '기타'];
                 break;
             case "변형률계n무응력계":
-                var depth_3 = ['ALL', 'JSH', 'TML', 'GEOKON', 'ROCTEST', '기타'];
+                var depth_3 = ['ALL', 'JSH',  'GEOKON', 'ROCTEST', '기타'];
                 break;
             case "압력계":
-                var depth_3 = ['ALL', 'JSH', 'TML', 'KYOWA', '기타'];
+                var depth_3 = ['ALL', 'JSH', 'KYOWA', '기타'];
                 break;
             case "경사계":
-                var depth_3 = ['ALL', 'JSH', 'TML', '기타'];
+                var depth_3 = ['ALL', 'JSH', '기타'];
                 break;
             case "온도계":
                 var depth_3 = ['ALL', 'Thermocouple', 'Thermistor', 'PT100', 'iButton', '기타'];
@@ -610,8 +610,8 @@ var pt = {
         var depth_2 = new Array(); // [0] : data(name) , [1] : text
         switch (depth_1) {
             case "계측장비":
-                depth_2[0] = ['', 'JSH', 'TML', 'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
-                depth_2[1] = ['ALL', 'JSH', 'TML', 'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
+                depth_2[0] = ['', 'JSH',  'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
+                depth_2[1] = ['ALL', 'JSH', 'KYOWA', 'DEWESOFT', 'Campbell Scientific', '기타'];
                 break;
             case "스트레인게이지":
                 depth_2[0] = ['스트레인게이지', '악세사리'];
@@ -656,8 +656,8 @@ var pt = {
         var depth_3 = new Array(); // [0] : data(name) , [1] : text
         switch (depth_2) {
             case "스트레인게이지":
-                depth_3[0] = ['', 'TML', 'MM', 'KYOWA', 'SHOWA', '기타'];
-                depth_3[1] = ['ALL', 'TML', 'MM', 'KYOWA', 'SHOWA', '기타'];
+                depth_3[0] = ['',  'MM', 'KYOWA', 'SHOWA', '기타'];
+                depth_3[1] = ['ALL',  'MM', 'KYOWA', 'SHOWA', '기타'];
                 break;
             case "악세사리":
                 if($('#trail_depth1_txt').data('name') == "시험용치구")
@@ -684,20 +684,20 @@ var pt = {
                 depth_3[1] = ['ALL', 'Axial', 'High Temperature Axial', 'Clip-on Gauge', 'Deflectometers', 'Laser Extensometers', 'Calibrators', '기타'];
                 break;
             case "토압계":
-                depth_3[0] = ['', 'JSH', 'TML', 'KYOWA', 'SSK', '기타'];
-                depth_3[1] = ['ALL', 'JSH', 'TML', 'KYOWA', 'SSK', '기타'];
+                depth_3[0] = ['', 'JSH',  'KYOWA', 'SSK', '기타'];
+                depth_3[1] = ['ALL', 'JSH',  'KYOWA', 'SSK', '기타'];
                 break;
             case "변형률계n무응력계":
-                depth_3[0] = ['', 'JSH', 'TML', 'GEOKON', 'ROCTEST', '기타'];
-                depth_3[1] = ['ALL', 'JSH', 'TML', 'GEOKON', 'ROCTEST', '기타'];
+                depth_3[0] = ['', 'JSH',  'GEOKON', 'ROCTEST', '기타'];
+                depth_3[1] = ['ALL', 'JSH',  'GEOKON', 'ROCTEST', '기타'];
                 break;
             case "압력계":
-                depth_3[0] = ['', 'JSH', 'TML', 'KYOWA', '기타'];
-                depth_3[1] = ['ALL', 'JSH', 'TML', 'KYOWA', '기타'];
+                depth_3[0] = ['', 'JSH',  'KYOWA', '기타'];
+                depth_3[1] = ['ALL', 'JSH', 'KYOWA', '기타'];
                 break;
             case "경사계":
-                depth_3[0] = ['', 'JSH', 'TML', '기타'];
-                depth_3[1] = ['ALL', 'JSH', 'TML', '기타'];
+                depth_3[0] = ['', 'JSH', '기타'];
+                depth_3[1] = ['ALL', 'JSH', '기타'];
                 break;
             case "온도계":
                 depth_3[0] = ['', 'Thermocouple', 'Thermistor', 'PT100', 'iButton', '기타'];
