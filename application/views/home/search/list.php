@@ -31,7 +31,7 @@
     <meta name="twitter:site" content="@" />    
     <meta name="twitter:creator" content="@" />     
 
-    <title>검색 | (주)주신산업</title>
+    <title>검색 | (주)세인테크</title>
 
     <link rel="stylesheet" href="<?=$this->config->item('INCLUDE_HOME_DIR')?>/css/page-sub.css">
     <link rel="stylesheet" href="<?=$this->config->item('INCLUDE_HOME_DIR')?>/css/search.css">

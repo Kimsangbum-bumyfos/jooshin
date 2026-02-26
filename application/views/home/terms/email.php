@@ -15,8 +15,8 @@
 
     <!-- OG Tag -->
     <meta property="fb:app_id" content="<?= $this->config->item('FB_APP_ID')?>" />
-    <meta property="og:title" content="이메일 무단수집거부 | (주)주신산업" />
-    <meta property="og:site_name" content="@(주)주신산업" />    
+    <meta property="og:title" content="이메일 무단수집거부 | (주)세인테크" />
+    <meta property="og:site_name" content="@(주)세인테크" />    
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= base_url();?>home/terms/email">
     <meta property="og:image" content="<?= base_url();?>uploads/thumb/logo.png" />
@@ -24,14 +24,14 @@
 
     <!-- Tw -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="이메일 무단수집거부 | (주)주신산업" />
+    <meta name="twitter:title" content="이메일 무단수집거부 | (주)세인테크" />
     <meta name="twitter:description" content="<?=$this->config->item('META_DESC')?>" />
     <meta name="twitter:image" content="<?= base_url();?>uploads/thumb/logo.png" />
     <meta name="twitter:url" content="<?= base_url();?>home/terms/email" />  
-    <meta name="twitter:site" content="@(주)주신산업" />    
-    <meta name="twitter:creator" content="@(주)주신산업" />     
+    <meta name="twitter:site" content="@(주)세인테크" />    
+    <meta name="twitter:creator" content="@(주)세인테크" />     
 
-    <title>이메일 무단수집거부 | (주)주신산업</title>
+    <title>이메일 무단수집거부 | (주)세인테크</title>
 
     <link rel="stylesheet" href="<?=$this->config->item('INCLUDE_HOME_DIR')?>/css/page-sub.css">
     
@@ -58,11 +58,11 @@
         <!-- container -->
         <div id="skip_container" class="container">
             <section class="terms">
-                <h2 class="hidden">(주)주신산업 이메일 무단수집 거부</h2>
+                <h2 class="hidden">(주)세인테크 이메일 무단수집 거부</h2>
                 <div class="contents-box">
                      <div class="terms-group">
                         <div class="terms-top-title">
-                            <p>(주)주신산업 이메일 무단수집 거부</p>
+                            <p>(주)세인테크 이메일 무단수집 거부</p>
                         </div>
                         <div class="terms-box">
                             <p>본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는것을 거부하며, 이를 위반시 정보통신망법에 의해 형사 처벌됨을 유의하시기 바랍니다.</p>

@@ -15,8 +15,8 @@
 
     <!-- OG Tag -->
     <meta property="fb:app_id" content="<?= $this->config->item('FB_APP_ID')?>" />
-    <meta property="og:title" content="<?= $title ?> | (주)주신산업" />
-    <meta property="og:site_name" content="@(주)주신산업" />    
+    <meta property="og:title" content="<?= $title ?> | (주)세인테크" />
+    <meta property="og:site_name" content="@(주)세인테크" />    
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= base_url();?>home/product/detail?idx=<?= $idx ?>&menu_code=<?= $menu_code ?>&menu_up_code=<?= $menu_up_code ?>&depth_1=<?= $depth_1 ?>&depth_2=<?= $depth_2 ?>&depth_3=<?= $depth_3 ?>">
     <meta property="og:image" content="<?= base_url();?><?= $path ?>/<?= $thumb_img ?>" />
@@ -24,14 +24,14 @@
 
     <!-- Tw -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?= $title ?> | (주)주신산업" />
+    <meta name="twitter:title" content="<?= $title ?> | (주)세인테크" />
     <meta name="twitter:description" content="<?= $sub_title ?>" />
     <meta name="twitter:image" content="<?= base_url();?><?= $path ?>/<?= $thumb_img ?>" />
     <meta name="twitter:url" content="<?= base_url();?>home/product/detail?idx=<?= $idx ?>&menu_code=<?= $menu_code ?>&menu_up_code=<?= $menu_up_code ?>&depth_1=<?= $depth_1 ?>&depth_2=<?= $depth_2 ?>&depth_3=<?= $depth_3 ?>" />
-    <meta name="twitter:site" content="@(주)주신산업" />    
-    <meta name="twitter:creator" content="@(주)주신산업" />     
+    <meta name="twitter:site" content="@(주)세인테크" />    
+    <meta name="twitter:creator" content="@(주)세인테크" />     
 
-    <title><?= $title ?> | (주)주신산업</title>
+    <title><?= $title ?> | (주)세인테크</title>
 
     <script>
         var mCode = '<?php echo $menu_code?>';
@@ -87,7 +87,7 @@
         "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
-          "name": "(주)주신산업"
+          "name": "(주)세인테크"
         }
       }
     }

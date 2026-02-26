@@ -65,7 +65,7 @@ class Inquire extends REST_Controller {
             $this->email->to(
                     array("help@joosh.co.kr")
                 );
-            $this->email->subject("[주신산업] 고객문의가 등록되었습니다.");
+            $this->email->subject("[세인테크] 고객문의가 등록되었습니다.");
 
             $htmlContent = '<html><body>';
             $htmlContent .='<p style="color:#000;font-size:18px;font-weight:500;font-family:\'Apple Gothic\';">고객문의가 접수되었습니다.</p>';

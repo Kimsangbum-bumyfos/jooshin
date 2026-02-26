@@ -15,8 +15,8 @@
 
     <!-- OG Tag -->
     <meta property="fb:app_id" content="<?= $this->config->item('FB_APP_ID')?>" />
-    <meta property="og:title" content="회사소개 | (주)주신산업" />
-    <meta property="og:site_name" content="@(주)주신산업" />    
+    <meta property="og:title" content="회사소개 | (주)세인테크" />
+    <meta property="og:site_name" content="@(주)세인테크" />    
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= base_url();?>home/info/company?menu_code=<?= $menu_code ?>&menu_up_code=<?= $menu_up_code ?>">
     <meta property="og:image" content="<?= base_url();?>uploads/thumb/logo.png" />
@@ -24,14 +24,14 @@
 
     <!-- Tw -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="회사소개 | (주)주신산업" />
+    <meta name="twitter:title" content="회사소개 | (주)세인테크" />
     <meta name="twitter:description" content="세계인이 모두 행복해지는 세상, 주신이 보여주는 내일의 모습입니다." />
     <meta name="twitter:image" content="<?= base_url();?>uploads/thumb/logo.png" />
     <meta name="twitter:url" content="<?= base_url();?>home/info/company?menu_code=<?= $menu_code ?>&menu_up_code=<?= $menu_up_code ?>" />  
-    <meta name="twitter:site" content="@(주)주신산업" />    
-    <meta name="twitter:creator" content="@(주)주신산업" />     
+    <meta name="twitter:site" content="@(주)세인테크" />    
+    <meta name="twitter:creator" content="@(주)세인테크" />     
 
-    <title>회사소개 | (주)주신산업</title>
+    <title>회사소개 | (주)세인테크</title>
 
     <script>
         var mCode = '<?php echo $menu_code?>';
@@ -88,11 +88,11 @@
                 <div class="c-img"  style='background-image:url("<?=$this->config->item('INCLUDE_HOME_DIR')?>/img/dummy/th-company.png");' aria-label="주신사업"></div>
                 <div class="company-info">
                     <div class="c-title">
-                        <h2>주신산업 홈페이지를 방문해 주신 고객분들께 <br>먼저 감사의 인사를 전합니다.</h2>
+                        <h2>세인테크 홈페이지를 방문해 주신 고객분들께 <br>먼저 감사의 인사를 전합니다.</h2>
                     </div>
                     <div class="c-desc">
                         <p>
-                            주신산업은 오랜 경험을 바탕으로 축적된 기술력을 통해 고품질 엔지니어링 서비스와 국내외 다양한 메이커와의 파트너 쉽을 통해 계측장비 및 센서를 공급하고 차별화된 맞춤 솔루션을 제공해 왔습니다.
+                            세인테크은 오랜 경험을 바탕으로 축적된 기술력을 통해 고품질 엔지니어링 서비스와 국내외 다양한 메이커와의 파트너 쉽을 통해 계측장비 및 센서를 공급하고 차별화된 맞춤 솔루션을 제공해 왔습니다.
                         </p>
                         <p>
                             또한, 기술의 전문성과 기술개발의 노력으로 시험기 제조 및 제품개발로 첨단 ICT기반 융합기술에 힘쓰고 있습니다.
@@ -103,16 +103,16 @@
                         </p>
                         <br><br>
                         <p>
-                            마지막으로 저희 주신산업에 관심을 가져 주시는 고객분들께 다시 한 번 감사드리며 계속적인 관심과 사랑 부탁드립니다.
+                            마지막으로 저희 세인테크에 관심을 가져 주시는 고객분들께 다시 한 번 감사드리며 계속적인 관심과 사랑 부탁드립니다.
                         </p>
                         <br><br>
                         <p>
                             감사합니다.
                         </p>
-                        <!-- <p>날로 세분화 되어 가는 산업 분업화 속에서 저희 주신산업은 세계 선진국의 초정밀 mechanical sensor와 측정장비 국내 연구기관이나 대학 그리고 산업체에 소개하며 각 기관의 실험 및 현장 계측에 가장 적합한 컨설팅을 하고 정확한 데이터를 얻고자 최선을 다하고 있습니다</p>
+                        <!-- <p>날로 세분화 되어 가는 산업 분업화 속에서 저희 세인테크은 세계 선진국의 초정밀 mechanical sensor와 측정장비 국내 연구기관이나 대학 그리고 산업체에 소개하며 각 기관의 실험 및 현장 계측에 가장 적합한 컨설팅을 하고 정확한 데이터를 얻고자 최선을 다하고 있습니다</p>
                         <p>또한 국내의 우수한 업체를 선별하여 그들의 우수한 장비를 세계시장으로 진출 할 수 있도록 적극 협렵하여 국가경쟁력을 높이고 있습니다.</p>
                         <br><br>
-                        <p>주신산업은 항상 최고의 품질과 신제품 개발을 위하여 꾸준히 연구하고 보다 전문적이고 앞선 기술로서 최고의 제품을 생산하기 위해 끊임없이 노력할 것입니다.</p>
+                        <p>세인테크은 항상 최고의 품질과 신제품 개발을 위하여 꾸준히 연구하고 보다 전문적이고 앞선 기술로서 최고의 제품을 생산하기 위해 끊임없이 노력할 것입니다.</p>
                         <br><br>
                         <p>감사합니다.</p> -->
                     </div>
@@ -138,7 +138,7 @@
                         </tr>
                         <tr>
                             <td>06</td>
-                            <td>㈜주신산업 경남지사 설립</td>
+                            <td>㈜세인테크 경남지사 설립</td>
                         </tr>
                         <tr>
                             <th rowspan="4">2018</th>
@@ -148,11 +148,11 @@
                         </tr>
                         <tr>
                             <td>04</td>
-                            <td>(주)주신산업 사옥이전</td>
+                            <td>(주)세인테크 사옥이전</td>
                         </tr>
                         <tr>
                             <td>07</td>
-                            <td>(주)주신산업 성남사옥 공장등록</td>
+                            <td>(주)세인테크 성남사옥 공장등록</td>
                         </tr>
                         <tr>
                             <td>09</td>
@@ -208,7 +208,7 @@
                             <th>2010</th>
                             <td class="his-rd"><div></div></td>
                             <td>05</td>
-                            <td>(주)주신산업 법인 전환</td>
+                            <td>(주)세인테크 법인 전환</td>
                         </tr>
                         <tr>
                             <th rowspan="2">2009</th>
@@ -224,7 +224,7 @@
                             <th rowspan="2">2008</th>
                             <td rowspan="2" class="his-rd"><div></div></td>
                             <td>06</td>
-                            <td>(주)주신산업 설립</td>
+                            <td>(주)세인테크 설립</td>
                         </tr>
                         <tr>
                             <td>10</td>

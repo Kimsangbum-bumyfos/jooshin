@@ -118,7 +118,7 @@ $config['board'] = '게시판관리';
 	$config['gallery'] = '갤러리관리';
 	$config['event'] = '이벤트관리';
 
-// 주신산업
+// 세인테크
 $config['products'] = '제품관리';
 
 $config['services'] = '시험및용역관리';

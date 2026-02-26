@@ -648,7 +648,7 @@ function setMenuData(c_item, p_item, p_bool, sort){
 		getPostList(c_item.menu_code, c_item.menu_up_code, g_offset.post_offset, limit);
 
 
-	// 주신산업 제품소개 json menu
+	// 세인테크 제품소개 json menu
 
 };
 
